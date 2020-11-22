@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "declaration": false,
+    "composite": false,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": false,
+    "skipLibCheck": false,
+    "baseUrl": ".",
+    "rootDir": "src"
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/ts", "./src/**/*.ts", "src/routes/routes.js"]
+}
