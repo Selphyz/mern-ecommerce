@@ -1,9 +1,14 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
-import { ProductReducer } from './reducers';
+import { ProductReducer, ProductDetailsReducer } from './reducers';
 
+// const reducer = combineReducers({
+//   productsState: ProductReducer,
+//   productState: ProductDetailsReducer,
+// });
 export const store = configureStore({
   reducer: {
-    productState: ProductReducer,
+    productsState: ProductReducer,
+    productState: ProductDetailsReducer,
   },
 });
 

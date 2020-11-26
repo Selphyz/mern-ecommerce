@@ -10,24 +10,26 @@ export interface ProductInterface {
   brand?: string;
   category?: string;
   user?: string;
-  reviews?: any[];
+  reviews?: any;
   createdAt?: string;
   updatedAt?: string;
 }
-export interface Payload {
+export interface ProductsPayload {
   loading?: boolean;
-  errors?: any;
+  error?: any;
   products?: ProductInterface[];
 }
+export interface ProductPayload extends ProductInterface {
+  loading?: boolean;
+  error?: any;
+}
+export interface ProductState {
+  loading?: boolean;
+  error?: any;
+  product?: ProductInterface;
+}
+
 // export interface ProductArray extends Array<ProductInterface> {}
-export interface ProductList {
-  [index: number]: ProductInterface;
-}
-export interface ProductPayload extends ProductList {
-  loading: boolean;
-  error: any;
-}
-export interface Extras {
-  loading: boolean;
-  errors: any;
-}
+// export interface ProductList {
+//   [index: number]: ProductInterface;
+// }

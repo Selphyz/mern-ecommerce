@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { ProductInterface } from 'src/store/types/product.interfaces';
+import { ProductInterface } from '../store/types/product.interfaces';
 import Rating from './Rating';
 interface ProductProps {
   product: ProductInterface;
